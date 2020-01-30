@@ -1,0 +1,95 @@
+body {
+  background-color: #eeeeee;
+  font-family: "Bree Serif", serif;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  background-color: #005696;
+  width: 100%;
+  height: 65px;
+  z-index: 3;
+}
+.header .logoDiv {
+  margin-top: 3px;
+  margin-left: 35px;
+  color: #FFFFFF;
+}
+.header .logoDiv img {
+  margin-left: 15px;
+}
+.header .logoDiv p {
+  margin: 0;
+  font-size: 25px;
+  font-family: "Bree Serif", serif;
+}
+.header .profileDiv {
+  position: absolute;
+  width: 185px;
+  height: 65px;
+  right: 0;
+  display: flex;
+}
+.header .profileDiv .profile {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: #FFFFFF;
+}
+.header .profileDiv .profile #userImg {
+  margin-right: 10px;
+  cursor: pointer;
+}
+.header .profileDiv .profile #logout {
+  margin-left: 25px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.sideBar {
+  position: fixed;
+  top: 160px;
+  background-color: #FFFFFF;
+  border-radius: 50px;
+  width: 70px;
+  height: 400px;
+  z-index: 5;
+  -webkit-box-shadow: 8px 10px 15px -1px rgba(0, 0, 0, 0.13);
+  -moz-box-shadow: 8px 10px 15px -1px rgba(0, 0, 0, 0.13);
+  box-shadow: 8px 10px 15px -1px rgba(0, 0, 0, 0.13);
+}
+.sideBar ul {
+  position: absolute;
+  top: 75px;
+  padding-left: 15px;
+  text-align: center;
+}
+.sideBar ul li {
+  list-style: none;
+  margin-bottom: 35px;
+}
+
+.content {
+  position: absolute;
+  width: 94.2%;
+  height: 100%;
+  top: 65px;
+  left: 75px;
+  background-color: #eeeeee;
+}
+
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background-color: #BED523;
+  z-index: 3;
+  text-align: center;
+}
+footer p {
+  padding-top: 18px;
+}
+
+/*# sourceMappingURL=dashboardTea.css.map */
