@@ -11,6 +11,22 @@ body {
   height: 65px;
   z-index: 3;
 
+  .pageName {
+    position: absolute;
+    top: 33px;
+    left: 45%;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    color: #FFFFFF;
+
+    p {
+      margin: 0;
+      font-size: 20px;
+      font-family: 'Bree Serif', serif;
+    }
+  }
+
   .logoDiv {
     margin-top: 3px;
     margin-left: 35px;
@@ -103,3 +119,21 @@ footer {
     padding-top: 18px;
   }
 }
+
+//@media only screen and (max-width: 425px) {
+//  .pageName {
+//    position: absolute;
+//    top: 50px;
+//    left: 45%;
+//    right: 0;
+//    bottom: 0;
+//    margin: auto;
+//    color: #FFFFFF;
+//
+//    p {
+//      margin: 0;
+//      font-size: 25px;
+//      font-family: 'Bree Serif', serif;
+//    }
+//  }
+//}

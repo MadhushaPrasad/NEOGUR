@@ -11,6 +11,20 @@ body {
   height: 65px;
   z-index: 3;
 }
+.header .pageName {
+  position: absolute;
+  top: 33px;
+  left: 45%;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  color: #FFFFFF;
+}
+.header .pageName p {
+  margin: 0;
+  font-size: 20px;
+  font-family: "Bree Serif", serif;
+}
 .header .logoDiv {
   margin-top: 3px;
   margin-left: 35px;
