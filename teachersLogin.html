@@ -7,21 +7,22 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Login Page</title>
     <!-- Bootstrap Core CSS -->
-    <link href="../assets/css/common/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/common/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="../assets/css/common/all.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
 
     <!--    Custom Styles-->
-    <link href="../assets/css/login.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/login.css" rel="stylesheet" type="text/css">
+
 </head>
 <body>
 <main>
     <!--signup div-->
     <div class="container" id="container">
         <div class="form-container sign-up-container">
-            <form action="#">
+            <form class="signUpForm">
                 <h1>Create Account</h1>
                 <span>or use your email for registration</span>
                 <input type="text" placeholder="Name" name="name"/>
@@ -29,20 +30,20 @@
                 <input type="email" placeholder="Email" name="email"/>
                 <input type="password" placeholder="Password" name="password"/>
                 <input type="password" placeholder="Confirm Password" name="confPassword"/>
-                <button  style="margin-bottom: 5px;">Sign Up</button>
+                <button style="margin-bottom: 5px;" type="button" onclick="registerTeacher()">Sign Up</button>
             </form>
         </div>
 
 
         <!--        signIN Div-->
         <div class="form-container sign-in-container">
-            <form action="#">
+            <form action="" method="get" class="loginForm">
                 <h1>Sign in</h1>
                 <span>or use your account</span>
                 <input type="email" placeholder="Email" name="email"/>
                 <input type="password" placeholder="Password" name="password"/>
-                <a href="teachersDashboard.html">Forgot your password?</a>
-                <button>Sign In</button>
+                <a style="cursor: pointer;" onclick="forgetPassword('teacher')">Forgot your password?</a>
+                <button onclick="loginDashboard()">Log in</button>
             </form>
         </div>
 
@@ -52,22 +53,23 @@
                 <div class="overlay-panel overlay-left">
                     <h1>Welcome Back!</h1>
                     <p>To keep connected with us please login with your personal info</p>
-                    <button class="ghost" id="signIn">Sign In</button>
+                    <button class="ghost" id="signIn">Login In</button>
                 </div>
 
                 <!---->
                 <div class="overlay-panel overlay-right">
                     <h1>Hello, Teacher!</h1>
                     <p>Enter your personal details and start journey with us</p>
-                    <button class="ghost" id="signUp">Sign Up</button>
+                    <button type="button" class="ghost" id="signUp">Sign Up</button>
                 </div>
 
             </div>
         </div>
     </div>
 </main>
-<script src="../assets/js/common/jquery-3.4.1.min.js"></script>
-<script src="../assets/js/common/bootstrap.min.js"></script>
-<script src="../assets/js/login.js"></script>
+<script src="assets/js/common/jquery-3.4.1.min.js"></script>
+<script src="assets/js/common/bootstrap.min.js"></script>
+<script src="assets/js/login.js"></script>
+<script src="assets/controller/teacherLoginController.js"></script>
 </body>
 </html>

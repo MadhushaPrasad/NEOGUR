@@ -7,15 +7,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Login Page</title>
     <!-- Bootstrap Core CSS -->
-    <link href="../assets/css/common/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/common/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="../assets/css/common/all.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/common/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
           rel="stylesheet" type="text/css">
 
     <!--    Custom Styles-->
-    <link href="../assets/css/login.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/login.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <main>
@@ -44,8 +44,8 @@
                 <span>or use your account</span>
                 <input type="email" placeholder="Email" name="email"/>
                 <input type="password" placeholder="Password" name="password"/>
-                <a href="studentDashboard.html">Forgot your password?</a>
-                <button>Sign In</a></button>
+                <a style="cursor: pointer;" onclick="forgetPassword('student')">Forgot your password?</a>
+                <button id="signInCheck" onclick="">Sign In</button>
             </form>
         </div>
 
@@ -69,8 +69,9 @@
         </div>
     </div>
 </main>
-<script src="../assets/js/common/jquery-3.4.1.min.js"></script>
-<script src="../assets/js/common/bootstrap.min.js"></script>
-<script src="../assets/js/login.js"></script>
+<script src="assets/js/common/jquery-3.4.1.min.js"></script>
+<script src="assets/js/common/bootstrap.min.js"></script>
+<script src="assets/js/login.js"></script>
+<script src="assets/controller/teacherLoginController.js"></script>
 </body>
 </html>
