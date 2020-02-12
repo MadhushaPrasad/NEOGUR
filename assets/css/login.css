@@ -4,6 +4,19 @@
   font-family: "Bree Serif", serif;
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  background: white;
+  padding-right: 10px;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #005696;
+}
+
 body {
   background: #f6f5f7;
   display: flex;

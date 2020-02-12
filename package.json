@@ -1,0 +1,24 @@
+{
+  "name": "neoguru",
+  "version": "1.0.0",
+  "description": "e-learing system",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MadhushaPrasad/NEOGUR.git"
+  },
+  "author": "madhusha prasad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MadhushaPrasad/NEOGUR/issues"
+  },
+  "homepage": "https://github.com/MadhushaPrasad/NEOGUR#readme",
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "froala-editor": "^3.1.0",
+    "jquery": "^3.4.1"
+  }
+}

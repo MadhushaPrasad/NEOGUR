@@ -25,14 +25,15 @@
             <form action="#" style="height: auto">
                 <h1 style="margin-top: 15px;">Create Account</h1>
                 <span>or use your email for registration</span>
-                <input type="text" placeholder="Name" name="name"/>
-                <input type="text" onfocus="(this.type='date')" placeholder="Age" name="age" max="1979-12-31">
-                <input type="email" placeholder="Gender" name="gender"/>
-                <input type="password" placeholder="Telephone" name="tel"/>
-                <input type="email" placeholder="Email" name="email"/>
-                <input type="password" placeholder="Password" name="password"/>
-                <input type="password" placeholder="Confirm Password" name="confPassword"/>
-                <button style="margin-top: 5px;margin-bottom: 25px;">Sign Up</button>
+                <input type="text" placeholder="Name" name="stName"/>
+                <input type="text" onfocus="(this.type='date')" placeholder="Age" name="stAge" max="2020-12-31">
+                <input type="email" placeholder="Gender" name="stGender"/>
+                <input type="password" placeholder="Telephone" name="stTel"/>
+                <input type="email" placeholder="Email" name="stEmail"/>
+                <input type="password" placeholder="Password" name="stPassword"/>
+                <input type="password" placeholder="Confirm Password" name="stConfPassword"/>
+                <button style="margin-top: 5px;margin-bottom: 25px;" type="button" onclick="addStudent()">Sign Up
+                </button>
             </form>
         </div>
 
@@ -42,10 +43,10 @@
             <form action="#">
                 <h1>Sign in</h1>
                 <span>or use your account</span>
-                <input type="email" placeholder="Email" name="email"/>
-                <input type="password" placeholder="Password" name="password"/>
+                <input type="email" placeholder="Email" name="email" id="sEmail"/>
+                <input type="password" placeholder="Password" name="password" id="sPassword"/>
                 <a style="cursor: pointer;" onclick="forgetPassword('student')">Forgot your password?</a>
-                <button id="signInCheck" onclick="">Sign In</button>
+                <button id="signInCheck" onclick="checkStudentLogin()">Sign In</button>
             </form>
         </div>
 
@@ -72,6 +73,6 @@
 <script src="assets/js/common/jquery-3.4.1.min.js"></script>
 <script src="assets/js/common/bootstrap.min.js"></script>
 <script src="assets/js/login.js"></script>
-<script src="assets/controller/teacherLoginController.js"></script>
+<script src="assets/controller/LoginController.js"></script>
 </body>
 </html>

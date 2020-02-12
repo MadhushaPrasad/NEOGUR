@@ -4,7 +4,6 @@
 class Student
 {
     private $id;
-    private $paperID;
     private $name;
     private $age;
     private $gender;
@@ -14,8 +13,6 @@ class Student
 
     /**
      * Student constructor.
-     * @param $id
-     * @param $paperID
      * @param $name
      * @param $age
      * @param $gender
@@ -23,10 +20,8 @@ class Student
      * @param $email
      * @param $password
      */
-    public function __construct($id, $paperID, $name, $age, $gender, $telephone, $email, $password)
+    public function __construct($name, $age, $gender, $telephone, $email, $password)
     {
-        $this->id = $id;
-        $this->paperID = $paperID;
         $this->name = $name;
         $this->age = $age;
         $this->gender = $gender;
@@ -49,22 +44,6 @@ class Student
     public function setId($id)
     {
         $this->id = $id;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getPaperID()
-    {
-        return $this->paperID;
-    }
-
-    /**
-     * @param mixed $paperID
-     */
-    public function setPaperID($paperID)
-    {
-        $this->paperID = $paperID;
     }
 
     /**
@@ -162,5 +141,4 @@ class Student
     {
         $this->password = $password;
     }
-
 }

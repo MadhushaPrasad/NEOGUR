@@ -2,134 +2,58 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e230acff-5449-4db6-b1a5-d1146268cc48" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/bo/MCQBo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/bo/MarksBo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/bo/PaperBo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/bo/TuteBo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/bo/UserBo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/bo/impl/MCQBoImpl.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/bo/impl/MarksBoImpl.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/bo/impl/PaperBoImpl.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/bo/impl/TuteBOImpl.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/bo/impl/UserBoImpl.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/db/DBConnection.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/model/Answer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/model/Marks.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/model/Paper.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/model/PaperType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/model/Question.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/model/Student.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/model/SubQueaction.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/model/Teacher.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/model/Tute.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/repo/MCQRepo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/repo/UserRepo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/repo/impl/MCQRepoImpl.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/repo/impl/UserRepoImpl.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/services/LoginService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/services/MCQService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/services/MarksService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/services/PaperService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/services/TuteService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/controller/teacherMcqController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/common/bootstrap-imageupload.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/common/bootstrap-imageupload.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/common/editor.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/forgotPassword.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/plugins/char_counter.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/plugins/char_counter.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/plugins/code_view.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/plugins/code_view.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/plugins/colors.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/plugins/colors.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/plugins/draggable.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/plugins/draggable.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/plugins/emoticons.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/plugins/emoticons.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/plugins/file.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/plugins/file.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/plugins/froala_editor.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/plugins/froala_style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/plugins/fullscreen.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/plugins/fullscreen.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/plugins/help.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/plugins/help.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/plugins/image.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/plugins/image.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/plugins/image_manager.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/plugins/image_manager.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/plugins/line_breaker.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/plugins/line_breaker.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/plugins/quick_insert.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/plugins/quick_insert.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/plugins/special_characters.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/plugins/special_characters.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/plugins/spell_checker.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/plugins/table.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/plugins/table.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/plugins/video.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/plugins/video.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/common/bootstrap-imageupload.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/common/bootstrap-imageupload.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/common/editor.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/forgotPassword.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/plugins/align.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/plugins/char_counter.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/plugins/code_beautifier.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/plugins/code_view.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/plugins/colors.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/plugins/draggable.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/plugins/edit_in_popup.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/plugins/emoticons.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/plugins/entities.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/plugins/file.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/plugins/font_family.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/plugins/font_size.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/plugins/forms.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/plugins/froala_editor.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/plugins/fullscreen.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/plugins/help.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/plugins/image.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/plugins/image_manager.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/plugins/inline_class.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/plugins/inline_style.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/plugins/line_breaker.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/plugins/line_height.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/plugins/link.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/plugins/lists.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/plugins/paragraph_format.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/plugins/paragraph_style.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/plugins/print.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/plugins/quick_insert.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/plugins/quote.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/plugins/save.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/plugins/special_characters.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/plugins/spell_checker.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/plugins/table.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/plugins/url.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/plugins/video.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/plugins/word_paste.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/teacherMCQ.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/teacherPaper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/teachetTute.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/sass/paper.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/custom.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forgotPassword.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/paper.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/studentTute.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tute.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/bo/StudentBo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/bo/TeacherBO.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/bo/impl/StudentBOImpl.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/bo/impl/TeacherBOImpl.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/repo/StudentRepo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/repo/TeacherRepo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/repo/impl/StudentRepoImpl.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/repo/impl/TeacherRepoImpl.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/controller/LoginController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/viewTute.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/studentMarks.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/studentViewTute.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/controller/studentLoginController.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/controller/studentLoginController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/controller/teacherLoginController.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/controller/teacherLoginController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/studentDashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/studentDashboard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/studentsLogin.html" beforeDir="false" afterPath="$PROJECT_DIR$/studentsLogin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teacher/mcq.html" beforeDir="false" afterPath="$PROJECT_DIR$/mcq.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teacher/teachersDashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/teachersDashboard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teacher/teachersLogin.html" beforeDir="false" afterPath="$PROJECT_DIR$/teachersLogin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/bo/MCQBo.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/bo/MarksBo.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/bo/PaperBo.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/bo/TuteBo.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/bo/UserBo.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/bo/impl/MCQBoImpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/bo/impl/MarksBoImpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/bo/impl/PaperBoImpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/bo/impl/TuteBOImpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/bo/impl/UserBoImpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/db/DBConnection.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/db/DBConnection.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/model/Answer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/model/Marks.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/model/Paper.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/model/PaperType.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/model/Question.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/model/Student.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/model/Student.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/model/SubQueaction.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/model/Teacher.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/model/Teacher.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/model/Tute.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/repo/MCQRepo.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/repo/UserRepo.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/repo/impl/MCQRepoImpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/repo/impl/UserRepoImpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/services/LoginService.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/services/LoginService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/services/MCQService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/services/MarksService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/services/PaperService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/services/TuteService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/controller/studentLoginController.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/controller/teacherLoginController.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/controller/teacherMcqController.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/studentTute.html" beforeDir="false" afterPath="$PROJECT_DIR$/studentTute.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/studentsLogin.html" beforeDir="false" afterPath="$PROJECT_DIR$/studentsLogin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teachersLogin.html" beforeDir="false" afterPath="$PROJECT_DIR$/teachersLogin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tute.html" beforeDir="false" afterPath="$PROJECT_DIR$/tute.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -149,10 +73,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/teachersLogin.html">
+        <entry file="file://$PROJECT_DIR$/assets/controller/LoginController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="32" column="81" lean-forward="true" selection-start-line="32" selection-start-column="81" selection-end-line="32" selection-end-column="81" />
+            <state relative-caret-position="489">
+              <caret line="86" column="26" selection-start-line="86" selection-start-column="26" selection-end-line="86" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/studentsLogin.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="297">
+              <caret line="34" column="96" lean-forward="true" selection-start-line="34" selection-start-column="96" selection-end-line="34" selection-end-column="96" />
               <folding>
                 <element signature="n#style#0;n#button#0;n#form#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#0;n#form#0;n#div#1;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -162,31 +95,73 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/js/login.js">
+        <entry file="file://$PROJECT_DIR$/api/repo/StudentRepo.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="72">
+              <caret line="3" column="21" lean-forward="true" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/controller/teacherLoginController.js">
+        <entry file="file://$PROJECT_DIR$/api/services/LoginService.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="21" column="14" lean-forward="true" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="55" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+            <state relative-caret-position="288">
+              <caret line="30" column="46" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/api/services/LoginService.php">
+        <entry file="file://$PROJECT_DIR$/assets/css/login.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="27" column="40" lean-forward="true" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
+            <state relative-caret-position="384">
+              <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/bo/impl/StudentBOImpl.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="43">
+              <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/bo/StudentBo.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/model/Student.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="226">
+              <caret line="24" selection-start-line="24" selection-end-line="24" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/repo/impl/TeacherRepoImpl.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="24">
+              <caret line="1" selection-start-line="1" selection-end-line="2" selection-end-column="79" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/repo/impl/StudentRepoImpl.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="24">
+              <caret line="1" column="74" selection-start-line="1" selection-start-column="74" selection-end-line="1" selection-end-column="74" />
             </state>
           </provider>
         </entry>
@@ -197,9 +172,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="SCSS File" />
-        <option value="HTML File" />
         <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -224,7 +199,6 @@
       <find>image-file</find>
       <find>btnNew</find>
       <find>logo</find>
-      <find>power</find>
       <find>help</find>
       <find>save</find>
       <find>fr-svg</find>
@@ -232,6 +206,8 @@
       <find>forg</find>
       <find>tra</find>
       <find>etc-login-form</find>
+      <find>power</find>
+      <find>dash</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -245,29 +221,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/student/studentDashboard.html" />
-        <option value="$PROJECT_DIR$/student/studentTute.html" />
-        <option value="$PROJECT_DIR$/assets/js/common/bootstrap-imageupload.js" />
-        <option value="$PROJECT_DIR$/teacher/custom.html" />
-        <option value="$PROJECT_DIR$/assets/controller/mcqConntrller.js" />
-        <option value="$PROJECT_DIR$/api/repo/MCQRepo.php" />
-        <option value="$PROJECT_DIR$/assets/sass/paper.scss" />
-        <option value="$PROJECT_DIR$/api/db/DBConnection.php" />
-        <option value="$PROJECT_DIR$/api/model/Teacher.php" />
-        <option value="$PROJECT_DIR$/api/repo/impl/MCQRepoImpl.php" />
-        <option value="$PROJECT_DIR$/student/studentsLogin.html" />
-        <option value="$PROJECT_DIR$/api/repo/UserRepo.php" />
-        <option value="$PROJECT_DIR$/api/bo/UserBo.php" />
-        <option value="$PROJECT_DIR$/api/repo/impl/UserRepoImpl.php" />
-        <option value="$PROJECT_DIR$/teacher/teachersLogin.html" />
-        <option value="$PROJECT_DIR$/api/model/Queaction.php" />
-        <option value="$PROJECT_DIR$/api/model/SubQueaction.php" />
-        <option value="$PROJECT_DIR$/api/model/Answer.php" />
-        <option value="$PROJECT_DIR$/api/model/Tute.php" />
-        <option value="$PROJECT_DIR$/api/model/Paper.php" />
-        <option value="$PROJECT_DIR$/api/model/PaperType.php" />
-        <option value="$PROJECT_DIR$/api/model/Marks.php" />
-        <option value="$PROJECT_DIR$/api/model/Student.php" />
         <option value="$PROJECT_DIR$/api/services/MCQService.php" />
         <option value="$PROJECT_DIR$/api/bo/impl/PaperBoImpl.php" />
         <option value="$PROJECT_DIR$/api/bo/MarksBo.php" />
@@ -279,23 +232,46 @@
         <option value="$PROJECT_DIR$/assets/controller/teacherMcqController.js" />
         <option value="$PROJECT_DIR$/assets/js/teacherPaper.js" />
         <option value="$PROJECT_DIR$/api/bo/MCQBo.php" />
-        <option value="$PROJECT_DIR$/api/bo/impl/UserBoImpl.php" />
         <option value="$PROJECT_DIR$/api/bo/impl/MCQBoImpl.php" />
         <option value="$PROJECT_DIR$/assets/js/plugins/froala_editor.min.js" />
         <option value="$PROJECT_DIR$/teacher/tute.html" />
         <option value="$PROJECT_DIR$/teacher/paper.html" />
         <option value="$PROJECT_DIR$/paper.html" />
-        <option value="$PROJECT_DIR$/api/services/LoginService.php" />
         <option value="$PROJECT_DIR$/assets/css/stylish-portfolio.css" />
         <option value="$PROJECT_DIR$/assets/controller/studentLoginController.js" />
         <option value="$PROJECT_DIR$/assets/js/forgotPassword.js" />
-        <option value="$PROJECT_DIR$/studentsLogin.html" />
         <option value="$PROJECT_DIR$/forgotPassword.html" />
         <option value="$PROJECT_DIR$/assets/css/forgotPassword.css" />
         <option value="$PROJECT_DIR$/studentDashboard.html" />
-        <option value="$PROJECT_DIR$/teachersLogin.html" />
         <option value="$PROJECT_DIR$/assets/js/login.js" />
         <option value="$PROJECT_DIR$/assets/controller/teacherLoginController.js" />
+        <option value="$PROJECT_DIR$/api/bo/UserBo.php" />
+        <option value="$PROJECT_DIR$/api/bo/impl/UserBoImpl.php" />
+        <option value="$PROJECT_DIR$/api/repo/UserRepo.php" />
+        <option value="$PROJECT_DIR$/api/repo/impl/UserRepoImpl.php" />
+        <option value="$PROJECT_DIR$/api/model/Teacher.php" />
+        <option value="$PROJECT_DIR$/api/repo/TeacherRepo.php" />
+        <option value="$PROJECT_DIR$/api/model/Student.php" />
+        <option value="$PROJECT_DIR$/studentViewTute.html" />
+        <option value="$PROJECT_DIR$/assets/js/viewTute.js" />
+        <option value="$PROJECT_DIR$/node_modules/froala-editor/js/froala_editor.min.js" />
+        <option value="$PROJECT_DIR$/node_modules/froala-editor/js/froala_editor.pkgd.min.js" />
+        <option value="$PROJECT_DIR$/tute.html" />
+        <option value="$PROJECT_DIR$/studentTute.html" />
+        <option value="$PROJECT_DIR$/studentMarks.html" />
+        <option value="$PROJECT_DIR$/api/db/DBConnection.php" />
+        <option value="$PROJECT_DIR$/api/repo/impl/TeacherRepoImpl.php" />
+        <option value="$PROJECT_DIR$/teachersLogin.html" />
+        <option value="$PROJECT_DIR$/api/bo/impl/StudentBOImpl.php" />
+        <option value="$PROJECT_DIR$/api/bo/StudentBo.php" />
+        <option value="$PROJECT_DIR$/api/bo/TeacherBO.php" />
+        <option value="$PROJECT_DIR$/api/bo/impl/TeacherBOImpl.php" />
+        <option value="$PROJECT_DIR$/api/repo/StudentRepo.php" />
+        <option value="$PROJECT_DIR$/api/repo/impl/StudentRepoImpl.php" />
+        <option value="$PROJECT_DIR$/api/services/LoginService.php" />
+        <option value="$PROJECT_DIR$/studentsLogin.html" />
+        <option value="$PROJECT_DIR$/assets/controller/LoginController.js" />
+        <option value="$PROJECT_DIR$/assets/css/login.css" />
       </list>
     </option>
   </component>
@@ -305,10 +281,10 @@
     </servers>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="784" />
+    <option name="x" value="225" />
+    <option name="y" value="96" />
+    <option name="width" value="978" />
+    <option name="height" value="576" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -318,6 +294,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -334,14 +311,50 @@
               <item name="NeoGuru" type="b2602c69:ProjectViewProjectNode" />
               <item name="NeoGuru" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="repo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NeoGuru" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NeoGuru" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="repo" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NeoGuru" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NeoGuru" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
               <item name="services" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NeoGuru" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NeoGuru" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NeoGuru" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NeoGuru" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NeoGuru" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NeoGuru" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NeoGuru" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NeoGuru" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="login.css" type="620a8d5e:NestingTreeNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -358,17 +371,18 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Madhusha Prasad\IdeaProjects\NeoGuru\" />
-      <recent name="C:\Users\Madhusha Prasad\IdeaProjects\NeoGuru\assets\js\common" />
-      <recent name="C:\Users\Madhusha Prasad\IdeaProjects\NeoGuru\assets\css\utill" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Madhusha Prasad\IdeaProjects\NeoGuru\assets\js\plugins" />
       <recent name="C:\Users\Madhusha Prasad\IdeaProjects\NeoGuru\student" />
       <recent name="C:\Users\Madhusha Prasad\IdeaProjects\NeoGuru\assets\css\plugins" />
       <recent name="C:\Users\Madhusha Prasad\IdeaProjects\NeoGuru\assets\js" />
       <recent name="C:\Users\Madhusha Prasad\IdeaProjects\NeoGuru\assets\css" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Madhusha Prasad\IdeaProjects\NeoGuru\api\bo\impl" />
+      <recent name="C:\Users\Madhusha Prasad\IdeaProjects\NeoGuru\" />
+      <recent name="C:\Users\Madhusha Prasad\IdeaProjects\NeoGuru\assets\js\common" />
+      <recent name="C:\Users\Madhusha Prasad\IdeaProjects\NeoGuru\assets\css\utill" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -432,7 +446,15 @@
       <workItem from="1580890462414" duration="1603000" />
       <workItem from="1580892245981" duration="6388000" />
       <workItem from="1580959061418" duration="12381000" />
-      <workItem from="1581045600840" duration="15981000" />
+      <workItem from="1581045600840" duration="16690000" />
+      <workItem from="1581173493435" duration="1222000" />
+      <workItem from="1581304750874" duration="129000" />
+      <workItem from="1581305746780" duration="18620000" />
+      <workItem from="1581390091255" duration="17594000" />
+      <workItem from="1581418799423" duration="2438000" />
+      <workItem from="1581421368029" duration="1096000" />
+      <workItem from="1581431647653" duration="4049000" />
+      <workItem from="1581480370709" duration="4877000" />
     </task>
     <task id="LOCAL-00001" summary="first git push">
       <created>1580362068790</created>
@@ -455,17 +477,24 @@
       <option name="project" value="LOCAL" />
       <updated>1580387574036</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="change some things">
+      <created>1581074864070</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1581074864070</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="179020000" />
+    <option name="totallyTimeSpent" value="229754000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1320" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22777778" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2595238" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -476,16 +505,16 @@
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32766616" />
       <window_info anchor="bottom" id="Run" order="3" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.641422" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32921174" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.2194745" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" weight="0.32921174" />
-      <window_info anchor="bottom" id="File Transfer" order="13" weight="0.32921174" />
+      <window_info anchor="bottom" id="File Transfer" order="13" visible="true" weight="0.13292117" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -503,151 +532,23 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first git push" />
     <MESSAGE value="create MCQ page" />
-    <option name="LAST_COMMIT_MESSAGE" value="create MCQ page" />
+    <MESSAGE value="change some things" />
+    <option name="LAST_COMMIT_MESSAGE" value="change some things" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties />
+        </breakpoint>
+        <breakpoint enabled="true" type="javascript-exception">
+          <properties />
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/api/model/Answer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="88" column="4" selection-start-line="88" selection-start-column="4" selection-end-line="88" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/model/SubQueaction.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="69" selection-start-line="69" selection-end-line="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/model/Tute.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="125" column="5" selection-start-line="125" selection-start-column="5" selection-end-line="125" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/model/Paper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1991">
-          <caret line="107" column="4" selection-start-line="107" selection-start-column="4" selection-end-line="107" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/model/PaperType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="49" column="5" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/model/Marks.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="51" column="1" lean-forward="true" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/model/Student.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="164" column="4" selection-start-line="164" selection-start-column="4" selection-end-line="164" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/bo/impl/PaperBoImpl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="36" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/bo/PaperBo.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/bo/impl/MarksBoImpl.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/bo/MarksBo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/services/MarksService.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/services/MCQService.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/services/PaperService.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/services/TuteService.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/bo/impl/TuteBOImpl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/bo/TuteBo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/plugins/froala_editor.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-80">
-          <caret line="1272" column="16" lean-forward="true" selection-start-line="1272" selection-start-column="16" selection-end-line="1272" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mcq.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-48">
-          <caret line="54" selection-start-line="54" selection-end-line="54" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#2;n#form#0;n#div#1;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/repo/MCQRepo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/repo/UserRepo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/common/bootstrap-imageupload.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="79" column="31" lean-forward="true" selection-start-line="79" selection-start-column="31" selection-end-line="79" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/icons/save.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/plugins/froala_editor.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="284">
@@ -661,30 +562,8 @@
     <entry file="file://$PROJECT_DIR$/assets/js/teachetTute.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/bo/impl/MCQBoImpl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tute.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1824">
-          <caret line="76" column="81" selection-start-line="76" selection-start-column="81" selection-end-line="76" selection-end-column="81" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/bo/MCQBo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/api/bo/impl/MCQBoImpl.php" />
+    <entry file="file://$PROJECT_DIR$/api/bo/MCQBo.php" />
     <entry file="file://$PROJECT_DIR$/assets/css/stylish-portfolio.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="199">
@@ -706,13 +585,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/controller/teacherMcqController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="35" lean-forward="true" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/controller/teacherMcqController.js" />
     <entry file="file://$PROJECT_DIR$/paper.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="287">
@@ -744,20 +617,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/controller/studentLoginController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/bo/impl/UserBoImpl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="47" column="20" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/common/bootstrap.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
@@ -778,13 +637,6 @@
             <element signature="e#106714#106891#2" expanded="true" />
             <element signature="e#106937#107114#2" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/login.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1345">
-          <caret line="165" selection-start-line="165" selection-end-line="177" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -814,13 +666,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/studentDashboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3935">
-          <caret line="267" column="57" selection-start-line="267" selection-start-column="57" selection-end-line="267" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/forgotPassword.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
@@ -835,49 +680,207 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/studentsLogin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="46" column="76" selection-start-line="46" selection-start-column="69" selection-end-line="46" selection-end-column="76" />
-          <folding>
-            <element signature="n#style#0;n#button#0;n#form#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#form#0;n#div#1;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/controller/teacherLoginController.js" />
+    <entry file="file://$PROJECT_DIR$/api/repo/UserRepo.php" />
+    <entry file="file://$PROJECT_DIR$/api/repo/impl/UserRepoImpl.php" />
+    <entry file="file://$PROJECT_DIR$/api/bo/UserBo.php" />
+    <entry file="file://$PROJECT_DIR$/api/bo/impl/UserBoImpl.php" />
+    <entry file="file://$PROJECT_DIR$/assets/controller/studentLoginController.js" />
     <entry file="file://$PROJECT_DIR$/assets/js/login.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="214">
+          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/teachersLogin.html">
+    <entry file="file://$PROJECT_DIR$/api/model/Teacher.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="32" column="81" lean-forward="true" selection-start-line="32" selection-start-column="81" selection-end-line="32" selection-end-column="81" />
-          <folding>
-            <element signature="n#style#0;n#button#0;n#form#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#form#0;n#div#1;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="207">
+          <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/controller/teacherLoginController.js">
+    <entry file="file://$PROJECT_DIR$/assets/js/viewTute.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/froala-editor/css/froala_editor.pkgd.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="21" column="14" lean-forward="true" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="55" />
+        <state relative-caret-position="144">
+          <caret line="6" column="71502" selection-start-line="6" selection-start-column="71502" selection-end-line="6" selection-end-column="71502" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/froala-editor/js/froala_editor.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="231651" lean-forward="true" selection-start-line="6" selection-start-column="231632" selection-end-line="6" selection-end-column="231651" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/froala-editor/js/froala_editor.pkgd.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/studentViewTute.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tute.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="671">
+          <caret line="83" column="36" selection-start-line="83" selection-start-column="36" selection-end-line="83" selection-end-column="36" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/studentTute.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="23" column="7" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/repo/TeacherRepo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/db/DBConnection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/studentDashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="267" column="57" selection-start-line="267" selection-start-column="57" selection-end-line="267" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/studentMarks.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="87" column="14" selection-start-line="87" selection-start-column="14" selection-end-line="87" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/teachersLogin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="45" column="56" lean-forward="true" selection-start-line="45" selection-start-column="56" selection-end-line="45" selection-end-column="56" />
+          <folding>
+            <element signature="n#style#0;n#button#0;n#form#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#form#0;n#div#1;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/model/Student.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="24" selection-start-line="24" selection-end-line="24" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/bo/TeacherBO.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="47" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/bo/impl/TeacherBOImpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="22" column="73" selection-start-line="22" selection-start-column="73" selection-end-line="22" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/bo/StudentBo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/bo/impl/StudentBOImpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="43">
+          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/repo/StudentRepo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="21" lean-forward="true" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/repo/impl/TeacherRepoImpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" selection-start-line="1" selection-end-line="2" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/repo/impl/StudentRepoImpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" column="74" selection-start-line="1" selection-start-column="74" selection-end-line="1" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/studentsLogin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="34" column="96" lean-forward="true" selection-start-line="34" selection-start-column="96" selection-end-line="34" selection-end-column="96" />
+          <folding>
+            <element signature="n#style#0;n#button#0;n#form#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#form#0;n#div#1;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/controller/LoginController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="489">
+          <caret line="86" column="26" selection-start-line="86" selection-start-column="26" selection-end-line="86" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/api/services/LoginService.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="27" column="40" lean-forward="true" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
+        <state relative-caret-position="288">
+          <caret line="30" column="46" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/login.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
         </state>
       </provider>
     </entry>

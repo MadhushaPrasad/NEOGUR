@@ -1,40 +1,57 @@
 <?php
-//checking the method type
-require_once __DIR__ . "../bo/impl/UserBoImpl.php";
+require_once $_SERVER['DOCUMENT_ROOT'] . "../NeoGuru/api/bo/impl/TeacherBOImpl.php";
+require_once $_SERVER['DOCUMENT_ROOT'] . "../NeoGuru/api/bo/impl/StudentBOImpl.php";
 
-$method = $_SERVER["REQUEST_METHOD"];
-$userBO = new UserBOImpl();
+
+$method = $_SERVER['REQUEST_METHOD'];
+$teacherBO = new TeacherBOImpl();
+$studentBO = new StudentBOImpl();
+
 switch ($method) {
-    case "GET":
-        $action = $_GET["action"];
-        switch ($action) {
-            case "getAll":
-                $userArray = $userBO->getAllUser();
-                echo json_encode($userArray);
-                break;
-            case "checkUser":
-                $userEmail = $_GET["email"];
-                $userPassword = $_GET["password"];
-                $res = $userBO->checkUser($userEmail, $userPassword);
-                echo $res;
-                break;
-        }
-        break;
     case "POST":
-        $action = $_GET["action"];
+        $action = $_GET['action'];
         switch ($action) {
+
             case "save":
-//                $tId = $_POST["customerID"];
-                $tName = $_POST["name"];
-                $tTelephone = $_POST["tel"];
-                $email = $_POST["email"];
-                $password = $_POST["password"];
-                $newUser = new Teacher(1, $tName, $tTelephone, $email, $password);
-                $res = $userBO->addUser($newUser);
-                echo $res;
+                $teacherName = $_POST["CrName"];
+                $teacherTelephone = $_POST["CrTel"];
+                $teacherEmail = $_POST["CrEmail"];
+                $teacherPassword = $_POST["CrPassword"];
+                $teacherM = new Teacher($teacherName, $teacherTelephone, $teacherEmail, $teacherPassword);
+                $teacher = $teacherBO->addTeacher($teacherM);
+                echo $teacher;
+                break;
+
+            case "student-save":
+                $studentName = $_POST["stName"];
+                $studentAge = $_POST["stAge"];
+                $studentGender = $_POST["stGender"];
+                $studentTelephone = $_POST["stTel"];
+                $studentEmail = $_POST["stEmail"];
+                $studentPassword = $_POST["stPassword"];
+
+                $studentM = new Student($studentName,$studentAge,$studentGender, $studentTelephone, $studentEmail, $studentPassword);
+                $student = $studentBO->addStudent($studentM);
+                echo $student;
                 break;
         }
         break;
-    default:
-        echo "Sorry System Error..!";
+    case "GET":
+        $action = $_GET['action'];
+        switch ($action) {
+            case "check":
+                $teacherEmail = $_GET["email"];
+                $teacherPassword = $_GET["password"];
+                $teacher = $teacherBO->checkTeacher($teacherEmail, $teacherPassword);
+                echo json_encode($teacher);
+                break;
+
+            case "check-student":
+                $studentEmail = $_GET["email"];
+                $studentPassword = $_GET["password"];
+                $student = $studentBO->checkStudent($teacherEmail, $teacherPassword);
+                echo json_encode($student);
+                break;
+        }
+        break;
 }

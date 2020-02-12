@@ -4,7 +4,7 @@
 class Teacher
 {
     private $tId;
-    private $tName;
+    private $Name;
     private $tTelephone;
     private $email;
     private $password;
@@ -12,15 +12,14 @@ class Teacher
     /**
      * Teacher constructor.
      * @param $tId
-     * @param $tName
+     * @param $Name
      * @param $tTelephone
      * @param $email
      * @param $password
      */
-    public function __construct($tId, $tName, $tTelephone, $email, $password)
+    public function __construct($Name, $tTelephone, $email, $password)
     {
-        $this->tId = $tId;
-        $this->tName = $tName;
+        $this->Name = $Name;
         $this->tTelephone = $tTelephone;
         $this->email = $email;
         $this->password = $password;
@@ -45,17 +44,17 @@ class Teacher
     /**
      * @return mixed
      */
-    public function getTName()
+    public function getName()
     {
-        return $this->tName;
+        return $this->Name;
     }
 
     /**
-     * @param mixed $tName
+     * @param mixed $Name
      */
-    public function setTName($tName)
+    public function setName($Name)
     {
-        $this->tName = $tName;
+        $this->Name = $Name;
     }
 
     /**
@@ -105,5 +104,4 @@ class Teacher
     {
         $this->password = $password;
     }
-
 }
