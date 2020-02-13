@@ -10,8 +10,8 @@ class StudentBOImpl implements StudentBo
         $connection = (new DBConnection())->getConnection();
         $studentRepo = new StudentRepoImpl();
         $studentRepo->setConnection($connection);
-        $studentRepo->checkStudent($email, $password);
-        return $studentRepo;
+        $checkedStudent = $studentRepo->checkStudent($email, $password);
+        return $checkedStudent;
     }
 
     public function addStudent(Student $student)

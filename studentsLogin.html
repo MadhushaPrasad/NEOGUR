@@ -22,11 +22,12 @@
     <!--signup div-->
     <div class="container" id="container">
         <div class="form-container sign-up-container" style="overflow-y: scroll;">
-            <form action="#" style="height: auto">
+            <form action="#" style="height: auto" class="signUpForm">
                 <h1 style="margin-top: 15px;">Create Account</h1>
                 <span>or use your email for registration</span>
                 <input type="text" placeholder="Name" name="stName"/>
-                <input type="text" onfocus="(this.type='date')" placeholder="Age" name="stAge" max="2020-12-31">
+                <input type="text" onfocus="(this.type='date')" placeholder="Date Of Birth" name="stAge"
+                       max="2020-12-31">
                 <input type="email" placeholder="Gender" name="stGender"/>
                 <input type="password" placeholder="Telephone" name="stTel"/>
                 <input type="email" placeholder="Email" name="stEmail"/>
@@ -40,7 +41,7 @@
 
         <!--        signIN Div-->
         <div class="form-container sign-in-container">
-            <form action="#">
+            <form action="#" class="loginForm">
                 <h1>Sign in</h1>
                 <span>or use your account</span>
                 <input type="email" placeholder="Email" name="email" id="sEmail"/>
@@ -73,6 +74,6 @@
 <script src="assets/js/common/jquery-3.4.1.min.js"></script>
 <script src="assets/js/common/bootstrap.min.js"></script>
 <script src="assets/js/login.js"></script>
-<script src="assets/controller/LoginController.js"></script>
+<script src="assets/controller/StudentLoginController.js"></script>
 </body>
 </html>

@@ -8,14 +8,6 @@ class TeacherRepoImpl implements TeacherRepo
 //    private $condition = false;
     private $connection;
 
-    /**
-     * TeacherRepoImpl constructor.
-     */
-    public function __construct()
-    {
-        $this->connection = (new DBConnection())->getConnection();
-    }
-
 
     public function checkTeacher($email, $password): bool
     {

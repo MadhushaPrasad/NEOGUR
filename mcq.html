@@ -19,7 +19,6 @@
 
     <!--    Custom Styles-->
     <link href="assets/css/mcq.css" rel="stylesheet" type="text/css">
-
 </head>
 <body>
 <div class="header">
@@ -55,11 +54,14 @@
 
 
     </section>
-    <section class="row container pt-5 pb-2" id="section01">
-        <div class="col-lg-12 col-md-12 col-sm-12">
-            <div class="form-group">
-                <input type="text" class="form-control" placeholder="Paper Title" name="title" id="title">
-            </div>
+    <section class="row container pt-3 pb-2" id="section01">
+        <div class="col-lg-12 col-md-12 col-sm-12 mb-lg-3 mb-md-3 mb-sm-3">
+            <select id="subjectList" class="dropdown-toggle col-lg-12" style="padding:10px 10px 10px 10px">
+<!--                <option value="" class="dropdown-item">Sinhala</option>-->
+<!--                <option value="" class="dropdown-item">Tamil</option>-->
+<!--                <option value="" class="dropdown-item">Information Technology</option>-->
+<!--                <option value="" class="dropdown-item">Engineering Technology</option>-->
+            </select>
         </div>
         <div class="col-lg-12 formDiv">
             <form class="formM" method="">
@@ -161,6 +163,6 @@
 <script src="assets/js/common/jquery-3.4.1.min.js"></script>
 <script src="assets/js/common/bootstrap.min.js"></script>
 <script src="assets/js/teacherMCQ.js"></script>
-<script src="assets/controller/teacherMcqController.js"></script>
+<script src="assets/controller/PaperController.js"></script>
 </body>
 </html>

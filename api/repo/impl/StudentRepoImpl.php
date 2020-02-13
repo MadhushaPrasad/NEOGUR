@@ -6,12 +6,6 @@ class StudentRepoImpl implements StudentRepo
 {
     private $connection;
 
-    public function __construct()
-    {
-        $this->connection = (new DBConnection())->getConnection();
-    }
-
-
     public function setConnection(mysqli $conne)
     {
         $this->connection = $conne;
@@ -29,7 +23,7 @@ class StudentRepoImpl implements StudentRepo
 
     public function addStudent(Student $student)
     {
-        $response = $this->connection->query("insert into teacher(name,age,gender,telephone,email,password) values('{$student->getName()}','{$student->getAge()}','{$student->getGender()}','{$student->getTelephone()}','{$student->getEmail()}','{$student->getPassword()}')");
+        $response = $this->connection->query("insert into student(stName,age,gender,telephone,email,password) values('{$student->getName()}','{$student->getAge()}','{$student->getGender()}','{$student->getTelephone()}','{$student->getEmail()}','{$student->getPassword()}')");
         if ($response > 0 && $this->connection->affected_rows > 0) {
             return true;
         } else {

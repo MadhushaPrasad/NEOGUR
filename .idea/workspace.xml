@@ -1,59 +1,565 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e230acff-5449-4db6-b1a5-d1146268cc48" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/bo/StudentBo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/bo/TeacherBO.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/bo/impl/StudentBOImpl.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/bo/impl/TeacherBOImpl.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/repo/StudentRepo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/repo/TeacherRepo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/repo/impl/StudentRepoImpl.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/repo/impl/TeacherRepoImpl.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/controller/LoginController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/viewTute.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/studentMarks.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/studentViewTute.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+    <list default="true" id="e230acff-5449-4db6-b1a5-d1146268cc48" name="Default Changelist" comment="connect with backend and do register teacher and student">
+      <change afterPath="$PROJECT_DIR$/api/bo/MarksBo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/bo/PaperBO.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/bo/QueactionBo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/bo/SubjectBO.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/bo/impl/MarksBoImpl.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/bo/impl/PaperBOImpl.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/bo/impl/QueactionBoImpl.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/bo/impl/SubjectBOImpl.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/model/Marks.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/model/Paper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/model/Queaction.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/model/SubQueaction.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/model/Subject.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/repo/MarksRepo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/repo/PaperRepo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/repo/QueactionRepo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/repo/SubQueactionRepo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/repo/SubjectRepo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/repo/impl/MarksRepoImpl.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/repo/impl/PaperRepoImpl.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/repo/impl/QueactionRepoImpl.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/repo/impl/SubQueactionRepoImpl.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/repo/impl/SubjectRepoImpl.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/services/DashboardService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/services/PaperService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/services/Queaction.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/controller/PaperController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/controller/StudentLoginController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/dist/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/dist/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/dist/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/dist/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/dist/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/dist/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/dist/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/dist/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/dist/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/dist/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/dist/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/dist/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/dist/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/dist/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/dist/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/dist/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/dist/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/dist/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/js/dist/alert.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/js/dist/alert.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/js/dist/button.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/js/dist/button.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/js/dist/carousel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/js/dist/carousel.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/js/dist/collapse.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/js/dist/collapse.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/js/dist/dropdown.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/js/dist/dropdown.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/js/dist/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/js/dist/index.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/js/dist/modal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/js/dist/modal.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/js/dist/popover.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/js/dist/popover.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/js/dist/scrollspy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/js/dist/scrollspy.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/js/dist/tab.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/js/dist/tab.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/js/dist/toast.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/js/dist/toast.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/js/dist/tooltip.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/js/dist/tooltip.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/js/dist/util.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/js/dist/util.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/js/src/alert.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/js/src/button.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/js/src/carousel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/js/src/collapse.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/js/src/dropdown.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/js/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/js/src/modal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/js/src/popover.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/js/src/scrollspy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/js/src/tab.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/js/src/toast.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/js/src/tools/sanitizer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/js/src/tooltip.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/js/src/util.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/_alert.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/_badge.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/_breadcrumb.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/_button-group.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/_buttons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/_card.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/_carousel.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/_close.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/_code.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/_custom-forms.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/_dropdown.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/_forms.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/_functions.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/_grid.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/_images.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/_input-group.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/_jumbotron.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/_list-group.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/_media.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/_modal.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/_nav.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/_navbar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/_pagination.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/_popover.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/_print.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/_progress.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/_reboot.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/_root.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/_spinners.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/_tables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/_toasts.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/_tooltip.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/_transitions.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/_type.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/_utilities.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/bootstrap-grid.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/bootstrap-reboot.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/bootstrap.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/mixins/_alert.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/mixins/_background-variant.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/mixins/_badge.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/mixins/_border-radius.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/mixins/_box-shadow.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/mixins/_breakpoints.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/mixins/_buttons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/mixins/_caret.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/mixins/_clearfix.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/mixins/_deprecate.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/mixins/_float.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/mixins/_forms.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/mixins/_gradients.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/mixins/_grid-framework.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/mixins/_grid.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/mixins/_hover.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/mixins/_image.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/mixins/_list-group.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/mixins/_lists.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/mixins/_nav-divider.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/mixins/_pagination.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/mixins/_reset-text.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/mixins/_resize.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/mixins/_screen-reader.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/mixins/_size.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/mixins/_table-row.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/mixins/_text-emphasis.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/mixins/_text-hide.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/mixins/_text-truncate.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/mixins/_transition.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/mixins/_visibility.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/utilities/_align.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/utilities/_background.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/utilities/_borders.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/utilities/_clearfix.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/utilities/_display.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/utilities/_embed.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/utilities/_flex.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/utilities/_float.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/utilities/_overflow.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/utilities/_position.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/utilities/_screenreaders.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/utilities/_shadows.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/utilities/_sizing.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/utilities/_spacing.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/utilities/_stretched-link.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/utilities/_text.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/utilities/_visibility.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/vendor/_rfs.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/License.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/bower.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/css/froala_editor.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/css/froala_editor.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/css/froala_editor.pkgd.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/css/froala_editor.pkgd.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/css/froala_style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/css/froala_style.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/css/plugins.pkgd.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/css/plugins.pkgd.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/css/plugins/char_counter.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/css/plugins/char_counter.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/css/plugins/code_view.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/css/plugins/code_view.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/css/plugins/colors.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/css/plugins/colors.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/css/plugins/draggable.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/css/plugins/draggable.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/css/plugins/emoticons.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/css/plugins/emoticons.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/css/plugins/file.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/css/plugins/file.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/css/plugins/fullscreen.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/css/plugins/fullscreen.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/css/plugins/help.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/css/plugins/help.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/css/plugins/image.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/css/plugins/image.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/css/plugins/image_manager.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/css/plugins/image_manager.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/css/plugins/line_breaker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/css/plugins/line_breaker.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/css/plugins/quick_insert.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/css/plugins/quick_insert.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/css/plugins/special_characters.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/css/plugins/special_characters.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/css/plugins/table.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/css/plugins/table.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/css/plugins/video.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/css/plugins/video.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/css/themes/dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/css/themes/dark.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/css/themes/gray.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/css/themes/gray.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/css/themes/royal.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/css/themes/royal.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/css/third_party/embedly.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/css/third_party/embedly.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/css/third_party/font_awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/css/third_party/font_awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/css/third_party/image_tui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/css/third_party/image_tui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/css/third_party/spell_checker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/css/third_party/spell_checker.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/editor.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/3rd-party/aviary/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/3rd-party/bootstrap/grid.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/3rd-party/bootstrap/lists.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/3rd-party/bootstrap/modal.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/3rd-party/code-mirror.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/3rd-party/font-awesome-5-css.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/3rd-party/font-awesome-5-js.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/3rd-party/jquery/mobile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/3rd-party/jquery/ui_modal.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/3rd-party/spell-checker/spell-checker.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/3rd-party/tui/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/api/get_html.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/api/init_destroy.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/api/insert_html.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/api/live_code_preview.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/api/live_content_preview.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/api/selection.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/buttons/custom_buttons.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/buttons/custom_dropdown.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/buttons/external_button.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/buttons/subscript_superscript.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/events/blur_focus.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/events/content_changed.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/events/drop.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/events/image_removed.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/events/initialized_destroy.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/file_s3_upload.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/image/custom_button.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/image/default_width.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/image/image_styles.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/image/insert_base64.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/image_s3_upload.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/init_inside_iframe/basic.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/init_inside_iframe/content.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/init_inside_iframe/inline.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/init_on_click/basic.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/init_on_click/inline.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/init_on_click/two_editors.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/initialization/edit_in_popup.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/initialization/init_on_button.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/initialization/init_on_click.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/initialization/init_on_h1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/initialization/init_on_image.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/initialization/init_on_link.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/initialization/initialized_event.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/international/direction_rtl.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/international/language.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/international/rtl_ltr_buttons.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/link/custom_validation.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/link/link_styles.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/link/predefined_links.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/misc/scrollable_container.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/misc/scrollable_container_inline.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/paragraph_modes/enter_br.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/paragraph_modes/enter_div.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/paragraph_modes/enter_p.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/paste/attrs.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/paste/plain.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/paste/tags.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/plugins/char_counter.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/plugins/full_screen.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/plugins/line_breaker.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/plugins/quick_insert.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/popular/disable_edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/popular/disable_paragraphs.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/popular/full.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/popular/full_page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/popular/iframe.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/popular/init_on_click.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/popular/textarea.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/popular/toolbar_buttons.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/popular/toolbar_inline.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/popular/two_instances.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/popular/z_index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/popups/colors.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/popups/custom.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/popups/emoticons.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/styling/adjustable_height.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/styling/font_family.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/styling/height.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/styling/inline.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/styling/paragraph.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/styling/placeholder.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/styling/width.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/table/cell_style.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/table/insert_helper.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/table/nested.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/table/resize.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/table/style.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/themes/dark.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/themes/gray.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/themes/royal.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/toolbar/bottom.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/toolbar/bottom_offset.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/toolbar/buttons.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/toolbar/external.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/toolbar/external_inline.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/toolbar/inline.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/toolbar/inline_selection.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/toolbar/offset.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/toolbar/show_selection.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/toolbar/sticky.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/typing/keep_format.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/typing/shortcuts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/html/typing/tab.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/img/photo1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/froala_editor.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/froala_editor.pkgd.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/languages/ar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/languages/bs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/languages/cs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/languages/da.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/languages/de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/languages/el.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/languages/en_ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/languages/en_gb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/languages/es.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/languages/et.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/languages/fa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/languages/fi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/languages/fr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/languages/he.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/languages/hr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/languages/hu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/languages/id.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/languages/it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/languages/ja.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/languages/ko.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/languages/ku.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/languages/me.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/languages/nb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/languages/nl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/languages/pl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/languages/pt_br.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/languages/pt_pt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/languages/ro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/languages/ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/languages/sk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/languages/sr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/languages/sv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/languages/th.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/languages/tr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/languages/uk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/languages/vi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/languages/zh_cn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/languages/zh_tw.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/plugins.pkgd.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/plugins/align.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/plugins/char_counter.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/plugins/code_beautifier.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/plugins/code_view.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/plugins/colors.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/plugins/draggable.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/plugins/edit_in_popup.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/plugins/emoticons.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/plugins/entities.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/plugins/file.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/plugins/font_family.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/plugins/font_size.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/plugins/forms.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/plugins/fullscreen.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/plugins/help.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/plugins/image.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/plugins/image_manager.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/plugins/inline_class.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/plugins/inline_style.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/plugins/line_breaker.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/plugins/line_height.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/plugins/link.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/plugins/lists.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/plugins/paragraph_format.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/plugins/paragraph_style.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/plugins/print.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/plugins/quick_insert.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/plugins/quote.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/plugins/save.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/plugins/special_characters.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/plugins/table.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/plugins/url.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/plugins/video.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/plugins/word_paste.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/third_party/embedly.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/third_party/font_awesome.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/third_party/image_tui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/js/third_party/spell_checker.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/froala-editor/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/AUTHORS.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/bower.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/dist/core.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/dist/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/dist/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/dist/jquery.min.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/dist/jquery.slim.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/dist/jquery.slim.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/dist/jquery.slim.min.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/external/sizzle/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/external/sizzle/dist/sizzle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/external/sizzle/dist/sizzle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/external/sizzle/dist/sizzle.min.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/.eslintrc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/ajax.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/ajax/jsonp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/ajax/load.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/ajax/parseXML.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/ajax/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/ajax/var/location.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/ajax/var/nonce.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/ajax/var/rquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/ajax/xhr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/attributes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/attributes/attr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/attributes/classes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/attributes/prop.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/attributes/support.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/attributes/val.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/callbacks.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/core.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/core/DOMEval.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/core/access.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/core/camelCase.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/core/init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/core/isAttached.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/core/nodeName.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/core/parseHTML.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/core/ready-no-deferred.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/core/ready.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/core/readyException.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/core/stripAndCollapse.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/core/support.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/core/toType.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/core/var/rsingleTag.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/css.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/css/addGetHookIf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/css/adjustCSS.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/css/curCSS.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/css/finalPropName.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/css/hiddenVisibleSelectors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/css/showHide.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/css/support.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/css/var/cssExpand.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/css/var/getStyles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/css/var/isHiddenWithinTree.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/css/var/rboxStyle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/css/var/rnumnonpx.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/css/var/swap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/data/Data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/data/var/acceptData.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/data/var/dataPriv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/data/var/dataUser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/deferred.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/deferred/exceptionHook.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/deprecated.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/dimensions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/effects.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/effects/Tween.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/effects/animatedSelector.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/event.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/event/ajax.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/event/alias.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/event/focusin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/event/support.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/event/trigger.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/exports/amd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/exports/global.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/manipulation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/manipulation/_evalUrl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/manipulation/buildFragment.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/manipulation/getAll.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/manipulation/setGlobalEval.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/manipulation/support.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/manipulation/var/rscriptType.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/manipulation/var/rtagName.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/manipulation/wrapMap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/offset.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/queue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/queue/delay.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/selector-native.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/selector-sizzle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/selector.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/serialize.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/traversing.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/traversing/findFilter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/traversing/var/dir.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/traversing/var/rneedsContext.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/traversing/var/siblings.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/ObjectFunctionString.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/arr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/class2type.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/concat.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/document.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/documentElement.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/fnToString.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/getProto.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/hasOwn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/indexOf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/isFunction.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/isWindow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/pnum.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/push.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/rcheckableType.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/rcssNum.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/rnothtmlwhite.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/slice.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/support.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/toString.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/jquery/src/wrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store/paper.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/bo/MCQBo.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/bo/MarksBo.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/bo/PaperBo.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/bo/TuteBo.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/bo/UserBo.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/bo/impl/MCQBoImpl.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/bo/impl/MarksBoImpl.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/bo/impl/PaperBoImpl.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/bo/impl/TuteBOImpl.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/bo/impl/UserBoImpl.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/db/DBConnection.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/db/DBConnection.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/model/Answer.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/model/Marks.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/model/Paper.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/model/PaperType.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/model/Question.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/model/Student.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/model/Student.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/model/SubQueaction.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/model/Teacher.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/model/Teacher.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/model/Tute.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/repo/MCQRepo.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/repo/UserRepo.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/repo/impl/MCQRepoImpl.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/repo/impl/UserRepoImpl.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/services/LoginService.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/services/LoginService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/services/MCQService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/services/MarksService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/services/PaperService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/services/TuteService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/controller/studentLoginController.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/controller/teacherLoginController.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/controller/teacherMcqController.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/studentTute.html" beforeDir="false" afterPath="$PROJECT_DIR$/studentTute.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/bo/impl/StudentBOImpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/bo/impl/StudentBOImpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/repo/impl/StudentRepoImpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/repo/impl/StudentRepoImpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/repo/impl/TeacherRepoImpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/repo/impl/TeacherRepoImpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/controller/LoginController.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/controller/TeacherLoginController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mcq.html" beforeDir="false" afterPath="$PROJECT_DIR$/mcq.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/studentsLogin.html" beforeDir="false" afterPath="$PROJECT_DIR$/studentsLogin.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/teachersLogin.html" beforeDir="false" afterPath="$PROJECT_DIR$/teachersLogin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tute.html" beforeDir="false" afterPath="$PROJECT_DIR$/tute.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -73,95 +579,46 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/controller/LoginController.js">
+        <entry file="file://$PROJECT_DIR$/mcq.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="489">
-              <caret line="86" column="26" selection-start-line="86" selection-start-column="26" selection-end-line="86" selection-end-column="26" />
+            <state relative-caret-position="168">
+              <caret line="61" column="76" selection-start-line="61" selection-start-column="76" selection-end-line="61" selection-end-column="76" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/studentsLogin.html">
+        <entry file="file://$PROJECT_DIR$/api/repo/SubQueactionRepo.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="34" column="96" lean-forward="true" selection-start-line="34" selection-start-column="96" selection-end-line="34" selection-end-column="96" />
-              <folding>
-                <element signature="n#style#0;n#button#0;n#form#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#form#0;n#div#1;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/repo/StudentRepo.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="3" column="21" lean-forward="true" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/services/LoginService.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="30" column="46" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
+            <state relative-caret-position="336">
+              <caret line="14" column="47" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/assets/css/login.css">
+        <entry file="file://$PROJECT_DIR$/api/repo/impl/SubQueactionRepoImpl.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+            <state relative-caret-position="312">
+              <caret line="49" column="66" selection-start-line="49" selection-start-column="66" selection-end-line="49" selection-end-column="66" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/bo/impl/StudentBOImpl.php">
+        <entry file="file://$PROJECT_DIR$/api/services/PaperService.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="43">
-              <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+            <state relative-caret-position="216">
+              <caret line="9" column="33" lean-forward="true" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/bo/StudentBo.php">
+        <entry file="file://$PROJECT_DIR$/api/services/Queaction.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/model/Student.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="24" selection-start-line="24" selection-end-line="24" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/repo/impl/TeacherRepoImpl.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24">
-              <caret line="1" selection-start-line="1" selection-end-line="2" selection-end-column="79" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/repo/impl/StudentRepoImpl.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24">
-              <caret line="1" column="74" selection-start-line="1" selection-start-column="74" selection-end-line="1" selection-end-column="74" />
+            <state relative-caret-position="96">
+              <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -173,8 +630,8 @@
       <list>
         <option value="SCSS File" />
         <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -221,38 +678,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/api/services/MCQService.php" />
-        <option value="$PROJECT_DIR$/api/bo/impl/PaperBoImpl.php" />
-        <option value="$PROJECT_DIR$/api/bo/MarksBo.php" />
-        <option value="$PROJECT_DIR$/api/bo/impl/TuteBOImpl.php" />
-        <option value="$PROJECT_DIR$/assets/js/teachetTute.js" />
-        <option value="$PROJECT_DIR$/assets/css/plugins/froala_editor.css" />
-        <option value="$PROJECT_DIR$/teacher/mcq.html" />
-        <option value="$PROJECT_DIR$/assets/js/teacherMCQ.js" />
-        <option value="$PROJECT_DIR$/assets/controller/teacherMcqController.js" />
-        <option value="$PROJECT_DIR$/assets/js/teacherPaper.js" />
-        <option value="$PROJECT_DIR$/api/bo/MCQBo.php" />
-        <option value="$PROJECT_DIR$/api/bo/impl/MCQBoImpl.php" />
-        <option value="$PROJECT_DIR$/assets/js/plugins/froala_editor.min.js" />
-        <option value="$PROJECT_DIR$/teacher/tute.html" />
-        <option value="$PROJECT_DIR$/teacher/paper.html" />
-        <option value="$PROJECT_DIR$/paper.html" />
-        <option value="$PROJECT_DIR$/assets/css/stylish-portfolio.css" />
-        <option value="$PROJECT_DIR$/assets/controller/studentLoginController.js" />
-        <option value="$PROJECT_DIR$/assets/js/forgotPassword.js" />
-        <option value="$PROJECT_DIR$/forgotPassword.html" />
-        <option value="$PROJECT_DIR$/assets/css/forgotPassword.css" />
-        <option value="$PROJECT_DIR$/studentDashboard.html" />
-        <option value="$PROJECT_DIR$/assets/js/login.js" />
-        <option value="$PROJECT_DIR$/assets/controller/teacherLoginController.js" />
-        <option value="$PROJECT_DIR$/api/bo/UserBo.php" />
-        <option value="$PROJECT_DIR$/api/bo/impl/UserBoImpl.php" />
-        <option value="$PROJECT_DIR$/api/repo/UserRepo.php" />
-        <option value="$PROJECT_DIR$/api/repo/impl/UserRepoImpl.php" />
-        <option value="$PROJECT_DIR$/api/model/Teacher.php" />
-        <option value="$PROJECT_DIR$/api/repo/TeacherRepo.php" />
-        <option value="$PROJECT_DIR$/api/model/Student.php" />
-        <option value="$PROJECT_DIR$/studentViewTute.html" />
         <option value="$PROJECT_DIR$/assets/js/viewTute.js" />
         <option value="$PROJECT_DIR$/node_modules/froala-editor/js/froala_editor.min.js" />
         <option value="$PROJECT_DIR$/node_modules/froala-editor/js/froala_editor.pkgd.min.js" />
@@ -260,18 +685,50 @@
         <option value="$PROJECT_DIR$/studentTute.html" />
         <option value="$PROJECT_DIR$/studentMarks.html" />
         <option value="$PROJECT_DIR$/api/db/DBConnection.php" />
-        <option value="$PROJECT_DIR$/api/repo/impl/TeacherRepoImpl.php" />
         <option value="$PROJECT_DIR$/teachersLogin.html" />
-        <option value="$PROJECT_DIR$/api/bo/impl/StudentBOImpl.php" />
         <option value="$PROJECT_DIR$/api/bo/StudentBo.php" />
         <option value="$PROJECT_DIR$/api/bo/TeacherBO.php" />
         <option value="$PROJECT_DIR$/api/bo/impl/TeacherBOImpl.php" />
         <option value="$PROJECT_DIR$/api/repo/StudentRepo.php" />
-        <option value="$PROJECT_DIR$/api/repo/impl/StudentRepoImpl.php" />
-        <option value="$PROJECT_DIR$/api/services/LoginService.php" />
-        <option value="$PROJECT_DIR$/studentsLogin.html" />
-        <option value="$PROJECT_DIR$/assets/controller/LoginController.js" />
         <option value="$PROJECT_DIR$/assets/css/login.css" />
+        <option value="$PROJECT_DIR$/api/services/LoginService.php" />
+        <option value="$PROJECT_DIR$/assets/controller/LoginController.js" />
+        <option value="$PROJECT_DIR$/assets/controller/TeacherLoginController.js" />
+        <option value="$PROJECT_DIR$/api/repo/impl/StudentRepoImpl.php" />
+        <option value="$PROJECT_DIR$/api/repo/impl/TeacherRepoImpl.php" />
+        <option value="$PROJECT_DIR$/studentsLogin.html" />
+        <option value="$PROJECT_DIR$/assets/controller/StudentLoginController.js" />
+        <option value="$PROJECT_DIR$/api/bo/impl/StudentBOImpl.php" />
+        <option value="$PROJECT_DIR$/api/services/DashboardService.php" />
+        <option value="$PROJECT_DIR$/api/repo/impl/PaperRepoImpl.php" />
+        <option value="$PROJECT_DIR$/api/repo/PaperRepo.php" />
+        <option value="$PROJECT_DIR$/api/model/Paper.php" />
+        <option value="$PROJECT_DIR$/api/bo/impl/PaperBOImpl.php" />
+        <option value="$PROJECT_DIR$/testing.html" />
+        <option value="$PROJECT_DIR$/store/paper.json" />
+        <option value="$PROJECT_DIR$/api/model/Marks.php" />
+        <option value="$PROJECT_DIR$/api/bo/PaperBO.php" />
+        <option value="$PROJECT_DIR$/mcq.html" />
+        <option value="$PROJECT_DIR$/api/bo/MarksBo.php" />
+        <option value="$PROJECT_DIR$/api/repo/MarksRepo.php" />
+        <option value="$PROJECT_DIR$/api/model/Queaction.php" />
+        <option value="$PROJECT_DIR$/api/model/SubQueaction.php" />
+        <option value="$PROJECT_DIR$/api/repo/impl/MarksRepoImpl.php" />
+        <option value="$PROJECT_DIR$/api/bo/impl/MarksBoImpl.php" />
+        <option value="$PROJECT_DIR$/api/model/Subject.php" />
+        <option value="$PROJECT_DIR$/api/bo/SubjectBO.php" />
+        <option value="$PROJECT_DIR$/api/bo/impl/SubjectBOImpl.php" />
+        <option value="$PROJECT_DIR$/api/repo/SubjectRepo.php" />
+        <option value="$PROJECT_DIR$/api/repo/impl/SubjectRepoImpl.php" />
+        <option value="$PROJECT_DIR$/assets/controller/PaperController.js" />
+        <option value="$PROJECT_DIR$/api/services/PaperService.php" />
+        <option value="$PROJECT_DIR$/api/services/Queaction.php" />
+        <option value="$PROJECT_DIR$/api/bo/QueactionBo.php" />
+        <option value="$PROJECT_DIR$/api/repo/QueactionRepo.php" />
+        <option value="$PROJECT_DIR$/api/bo/impl/QueactionBoImpl.php" />
+        <option value="$PROJECT_DIR$/api/repo/impl/QueactionRepoImpl.php" />
+        <option value="$PROJECT_DIR$/api/repo/SubQueactionRepo.php" />
+        <option value="$PROJECT_DIR$/api/repo/impl/SubQueactionRepoImpl.php" />
       </list>
     </option>
   </component>
@@ -295,6 +752,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -306,6 +764,25 @@
               <item name="NeoGuru" type="b2602c69:ProjectViewProjectNode" />
               <item name="NeoGuru" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NeoGuru" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NeoGuru" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="bo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NeoGuru" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NeoGuru" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="bo" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NeoGuru" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NeoGuru" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="NeoGuru" type="b2602c69:ProjectViewProjectNode" />
@@ -326,35 +803,10 @@
               <item name="api" type="462c0819:PsiDirectoryNode" />
               <item name="services" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="NeoGuru" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NeoGuru" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NeoGuru" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NeoGuru" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NeoGuru" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NeoGuru" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NeoGuru" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NeoGuru" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-              <item name="login.css" type="620a8d5e:NestingTreeNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -363,7 +815,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/js/plugins" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -371,18 +823,18 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Madhusha Prasad\IdeaProjects\NeoGuru\api\bo\impl" />
+      <recent name="C:\Users\Madhusha Prasad\IdeaProjects\NeoGuru\" />
+      <recent name="C:\Users\Madhusha Prasad\IdeaProjects\NeoGuru\assets\js\common" />
+      <recent name="C:\Users\Madhusha Prasad\IdeaProjects\NeoGuru\assets\css\utill" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Madhusha Prasad\IdeaProjects\NeoGuru\assets\js\plugins" />
       <recent name="C:\Users\Madhusha Prasad\IdeaProjects\NeoGuru\student" />
       <recent name="C:\Users\Madhusha Prasad\IdeaProjects\NeoGuru\assets\css\plugins" />
       <recent name="C:\Users\Madhusha Prasad\IdeaProjects\NeoGuru\assets\js" />
       <recent name="C:\Users\Madhusha Prasad\IdeaProjects\NeoGuru\assets\css" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Madhusha Prasad\IdeaProjects\NeoGuru\api\bo\impl" />
-      <recent name="C:\Users\Madhusha Prasad\IdeaProjects\NeoGuru\" />
-      <recent name="C:\Users\Madhusha Prasad\IdeaProjects\NeoGuru\assets\js\common" />
-      <recent name="C:\Users\Madhusha Prasad\IdeaProjects\NeoGuru\assets\css\utill" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -454,7 +906,8 @@
       <workItem from="1581418799423" duration="2438000" />
       <workItem from="1581421368029" duration="1096000" />
       <workItem from="1581431647653" duration="4049000" />
-      <workItem from="1581480370709" duration="4877000" />
+      <workItem from="1581480370709" duration="24200000" />
+      <workItem from="1581562442570" duration="7483000" />
     </task>
     <task id="LOCAL-00001" summary="first git push">
       <created>1580362068790</created>
@@ -484,17 +937,24 @@
       <option name="project" value="LOCAL" />
       <updated>1581074864070</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="connect with backend and do register teacher and student">
+      <created>1581485423846</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1581485423846</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="229754000" />
+    <option name="totallyTimeSpent" value="256560000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1320" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2595238" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26349208" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -514,7 +974,7 @@
       <window_info anchor="bottom" id="Database Changes" order="10" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.2194745" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" weight="0.32921174" />
-      <window_info anchor="bottom" id="File Transfer" order="13" visible="true" weight="0.13292117" />
+      <window_info anchor="bottom" id="File Transfer" order="13" weight="0.35394126" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -533,7 +993,8 @@
     <MESSAGE value="first git push" />
     <MESSAGE value="create MCQ page" />
     <MESSAGE value="change some things" />
-    <option name="LAST_COMMIT_MESSAGE" value="change some things" />
+    <MESSAGE value="connect with backend and do register teacher and student" />
+    <option name="LAST_COMMIT_MESSAGE" value="connect with backend and do register teacher and student" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -549,207 +1010,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/assets/js/plugins/froala_editor.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="6" column="192581" selection-start-line="6" selection-start-column="192581" selection-end-line="6" selection-end-column="192581" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/teachetTute.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/bo/impl/MCQBoImpl.php" />
-    <entry file="file://$PROJECT_DIR$/api/bo/MCQBo.php" />
-    <entry file="file://$PROJECT_DIR$/assets/css/stylish-portfolio.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="205" column="23" selection-end-line="369" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="26" column="19" lean-forward="true" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/teacherMCQ.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="574">
-          <caret line="27" column="63" selection-start-line="27" selection-start-column="63" selection-end-line="27" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/controller/teacherMcqController.js" />
-    <entry file="file://$PROJECT_DIR$/paper.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="220" column="24" selection-start-line="220" selection-start-column="24" selection-end-line="220" selection-end-column="24" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#li#0;n#ol#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/teacherPaper.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/dashboardTea.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/teachersDashboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3360">
-          <caret line="140" column="22" selection-start-line="140" selection-start-column="22" selection-end-line="140" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/common/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="5" column="152209" lean-forward="true" selection-start-line="5" selection-start-column="152209" selection-end-line="5" selection-end-column="152209" />
-          <folding>
-            <element signature="e#25768#26002#2" expanded="true" />
-            <element signature="e#26806#26959#1" expanded="true" />
-            <element signature="e#26999#27233#1" expanded="true" />
-            <element signature="e#30239#30515#2" expanded="true" />
-            <element signature="e#31347#31500#1" expanded="true" />
-            <element signature="e#31540#31816#1" expanded="true" />
-            <element signature="e#61072#61259#2" expanded="true" />
-            <element signature="e#61488#61624#2" expanded="true" />
-            <element signature="e#62027#62160#2" expanded="true" />
-            <element signature="e#63642#63795#1" expanded="true" />
-            <element signature="e#75788#76018#2" expanded="true" />
-            <element signature="e#76885#77121#2" expanded="true" />
-            <element signature="e#106714#106891#2" expanded="true" />
-            <element signature="e#106937#107114#2" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/dashboardStudent.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1921">
-          <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/sass/dashboardstudent.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="888">
-          <caret line="37" selection-start-line="34" selection-start-column="8" selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/forgotPassword.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="46" column="42" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="42" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#p#0;n#div#3;n#form#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#p#1;n#div#3;n#form#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/forgotPassword.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/forgotPassword.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="32" lean-forward="true" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/controller/teacherLoginController.js" />
-    <entry file="file://$PROJECT_DIR$/api/repo/UserRepo.php" />
-    <entry file="file://$PROJECT_DIR$/api/repo/impl/UserRepoImpl.php" />
-    <entry file="file://$PROJECT_DIR$/api/bo/UserBo.php" />
-    <entry file="file://$PROJECT_DIR$/api/bo/impl/UserBoImpl.php" />
-    <entry file="file://$PROJECT_DIR$/assets/controller/studentLoginController.js" />
-    <entry file="file://$PROJECT_DIR$/assets/js/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/model/Teacher.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/viewTute.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/froala-editor/css/froala_editor.pkgd.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="71502" selection-start-line="6" selection-start-column="71502" selection-end-line="6" selection-end-column="71502" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/froala-editor/js/froala_editor.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="231651" lean-forward="true" selection-start-line="6" selection-start-column="231632" selection-end-line="6" selection-end-column="231651" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/froala-editor/js/froala_editor.pkgd.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/studentViewTute.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tute.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="671">
-          <caret line="83" column="36" selection-start-line="83" selection-start-column="36" selection-end-line="83" selection-end-column="36" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/studentTute.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="552">
@@ -785,14 +1045,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/teachersLogin.html">
+    <entry file="file://$PROJECT_DIR$/api/bo/TeacherBO.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="45" column="56" lean-forward="true" selection-start-line="45" selection-start-column="56" selection-end-line="45" selection-end-column="56" />
-          <folding>
-            <element signature="n#style#0;n#button#0;n#form#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#form#0;n#div#1;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="168">
+          <caret line="7" column="47" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/login.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -803,31 +1066,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/bo/TeacherBO.php">
+    <entry file="file://$PROJECT_DIR$/studentsLogin.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" column="47" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/bo/impl/TeacherBOImpl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="22" column="73" selection-start-line="22" selection-start-column="73" selection-end-line="22" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/bo/StudentBo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/bo/impl/StudentBOImpl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="43">
-          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+        <state relative-caret-position="-73">
+          <caret line="28" column="90" selection-start-line="28" selection-start-column="90" selection-end-line="28" selection-end-column="90" />
+          <folding>
+            <element signature="n#style#0;n#form#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#form#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#form#0;n#div#1;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -838,24 +1085,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/repo/impl/TeacherRepoImpl.php">
+    <entry file="file://$PROJECT_DIR$/assets/controller/TeacherLoginController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" selection-start-line="1" selection-end-line="2" selection-end-column="79" />
+        <state relative-caret-position="264">
+          <caret line="20" column="13" lean-forward="true" selection-start-line="18" selection-start-column="12" selection-end-line="20" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/repo/impl/StudentRepoImpl.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" column="74" selection-start-line="1" selection-start-column="74" selection-end-line="1" selection-end-column="74" />
+        <state relative-caret-position="312">
+          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/studentsLogin.html">
+    <entry file="file://$PROJECT_DIR$/api/services/DashboardService.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="34" column="96" lean-forward="true" selection-start-line="34" selection-start-column="96" selection-end-line="34" selection-end-column="96" />
+        <state relative-caret-position="120">
+          <caret line="5" column="27" lean-forward="true" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/bo/StudentBo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/repo/impl/PaperRepoImpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="40" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/repo/PaperRepo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="15" column="49" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/model/Paper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="85" column="5" selection-start-line="85" selection-start-column="5" selection-end-line="85" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/teachersLogin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="69" selection-start-line="69" selection-end-line="69" selection-end-column="60" />
           <folding>
             <element signature="n#style#0;n#button#0;n#form#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#form#0;n#div#1;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -863,24 +1145,237 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/controller/LoginController.js">
+    <entry file="file://$PROJECT_DIR$/testing.html" />
+    <entry file="file://$PROJECT_DIR$/store/paper.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
-          <caret line="86" column="26" selection-start-line="86" selection-start-column="26" selection-end-line="86" selection-end-column="26" />
+        <state relative-caret-position="48">
+          <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/bo/impl/PaperBOImpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/bo/PaperBO.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paper.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2736" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/bo/MarksBo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/repo/MarksRepo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/model/SubQueaction.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="479">
+          <caret line="85" column="5" selection-start-line="85" selection-start-column="5" selection-end-line="85" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/model/Queaction.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="479">
+          <caret line="86" selection-start-line="86" selection-end-line="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/model/Marks.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/bo/impl/StudentBOImpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="23" column="6" lean-forward="true" selection-start-line="23" selection-start-column="6" selection-end-line="27" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/model/Subject.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1128">
+          <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/bo/SubjectBO.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/teacherMCQ.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-312">
+          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#li#0;n#ol#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h5#0;n#div#0;n#li#0;n#ol#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#div#2;n#form#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#0;n#ol#0;n#li#0;n#ol#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#1;n#ol#0;n#li#0;n#ol#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#2;n#ol#0;n#li#0;n#ol#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#3;n#ol#0;n#li#0;n#ol#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#4;n#ol#0;n#li#0;n#ol#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#1;n#li#0;n#ol#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/repo/impl/SubjectRepoImpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="77" selection-start-line="2" selection-start-column="77" selection-end-line="2" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/repo/SubjectRepo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/controller/PaperController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/controller/StudentLoginController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1008">
+          <caret line="42" column="9" selection-start-line="38" selection-start-column="8" selection-end-line="42" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/bo/impl/MarksBoImpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="12" column="46" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/repo/impl/MarksRepoImpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/bo/impl/SubjectBOImpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-72">
+          <caret line="6" column="36" lean-forward="true" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/bo/impl/TeacherBOImpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="13" column="45" selection-start-line="13" selection-start-column="45" selection-end-line="13" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/repo/impl/TeacherRepoImpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="28" column="9" lean-forward="true" selection-start-line="24" selection-start-column="7" selection-end-line="28" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/repo/QueactionRepo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="13" column="49" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/bo/impl/QueactionBoImpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/bo/QueactionBo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="38" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="11" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/services/PaperService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="33" lean-forward="true" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/services/LoginService.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="30" column="46" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
+        <state relative-caret-position="48">
+          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="84" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/login.css">
+    <entry file="file://$PROJECT_DIR$/api/services/Queaction.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+        <state relative-caret-position="96">
+          <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mcq.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="61" column="76" selection-start-line="61" selection-start-column="76" selection-end-line="61" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/repo/SubQueactionRepo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="14" column="47" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/repo/impl/QueactionRepoImpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="790">
+          <caret line="50" column="39" selection-start-line="50" selection-start-column="39" selection-end-line="50" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/repo/impl/SubQueactionRepoImpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="49" column="66" selection-start-line="49" selection-start-column="66" selection-end-line="49" selection-end-column="66" />
         </state>
       </provider>
     </entry>
